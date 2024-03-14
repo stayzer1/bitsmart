@@ -1,0 +1,71 @@
+// Header
+header {
+  background-color: #0a182d;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo a img {
+  width: clamp(12rem, 10.607rem + 5.714vw, 15.75rem);
+  height: clamp(2rem, 1.768rem + 0.952vw, 2.625rem);
+  pointer-events: none;
+}
+.logo a {
+  height: 42px;
+  display: block;
+}
+.logo {
+  position: relative;
+  z-index: 10;
+}
+.header__image-abs {
+  position: absolute;
+  top: -380px;
+  right: -190px;
+  z-index: -1;
+  width: clamp(19.625rem, 11.129rem + 34.857vw, 42.5rem);
+  height: clamp(19.625rem, 11.129rem + 34.857vw, 42.5rem);
+}
+.register__btn {
+}
+.register-btn {
+  padding: 4px 40px;
+  border-radius: 24px;
+  background-image: linear-gradient(-90deg, #10f1c2 0, #008671 100%);
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+.register-btn {
+  transform: translate(-6px, -6px);
+}
+.register-img {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .header__image-abs {
+    top: -300px;
+    right: -75px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__image-abs {
+    top: -200px;
+    right: -25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .register-btn {
+    display: none;
+  }
+  .register-img {
+    display: block;
+  }
+}

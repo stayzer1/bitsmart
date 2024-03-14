@@ -1,0 +1,64 @@
+.phone {
+  margin-top: 100px;
+  background-color: #10f1c2;
+  position: relative;
+}
+.phone__wrapper {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phone__text {
+  width: clamp(20.5rem, 9.682rem + 44.381vw, 49.625rem);
+}
+.phone__text-title {
+  color: #080a23;
+  font-size: clamp(2rem, 1.907rem + 0.381vw, 2.25rem);
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.phone__text-descr {
+  color: #080a23;
+  font-size: clamp(1rem, 0.954rem + 0.19vw, 1.125rem);
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-bottom: 32px;
+}
+.phone-register {
+  padding: 16px 70px;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #080a23;
+  font-size: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+.phone-register:hover {
+  transform: translate(-6px, -6px);
+}
+.phone__image {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  width: clamp(22.313rem, 17.182rem + 21.048vw, 36.125rem);
+  height: clamp(23.063rem, 17.468rem + 22.952vw, 38.125rem);
+  img {
+    width: clamp(22.313rem, 17.182rem + 21.048vw, 36.125rem);
+    height: clamp(23.063rem, 17.468rem + 22.952vw, 38.125rem);
+  }
+}
+@media screen and (max-width: 950px) {
+  .phone__wrapper {
+    padding-top: clamp(17.188rem, 12.266rem + 22.5vw, 25.625rem);
+  }
+  .phone__image {
+    top: -100px;
+    right: 0;
+  }
+}

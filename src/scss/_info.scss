@@ -1,0 +1,102 @@
+.info {
+  padding-top: clamp(2.5rem, 1.571rem + 3.81vw, 5rem);
+  padding-bottom: 80px;
+}
+.info__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.info__intro {
+  width: 100%;
+}
+.info__intro-title {
+  color: #fff;
+  font-size: clamp(2rem, 1.629rem + 1.524vw, 3rem);
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: clamp(2.375rem, 1.911rem + 1.905vw, 3.625rem);
+}
+.info__intro-btn {
+}
+.info-btn {
+  padding: 16px 24px;
+  border-radius: 40px;
+  background-image: linear-gradient(-90deg, #10f1c2 0, #008671 100%);
+  color: #fff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 30px;
+}
+.info__cards {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.info-img-abs {
+  position: absolute;
+  width: 650px;
+  height: 511px;
+  right: 18%;
+  z-index: -1;
+}
+.info__card {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  background-color: transparent;
+  width: clamp(20.5rem, 19.409rem + 4.476vw, 23.438rem);
+}
+.info__card-title {
+  color: #10f1c2;
+  font-size: clamp(1.5rem, 1.314rem + 0.762vw, 2rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 12px;
+  line-height: clamp(2.125rem, 1.87rem + 1.048vw, 2.813rem);
+}
+.info__card-descr {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 34px;
+}
+.info-btn {
+  transition: all 0.3s ease-in;
+}
+.info-btn:hover {
+  transform: translate(-6px, -6px);
+}
+.adaptive {
+  display: none;
+}
+@media screen and (max-width: 1150px) {
+  .info__wrapper {
+    flex-direction: column;
+  }
+  .info__intro-title {
+    padding-bottom: 12px;
+  }
+  .info__cards {
+    justify-content: left;
+  }
+
+  .display {
+    display: none;
+  }
+  .adaptive {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .info__card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+// Footer
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer__link {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__text {
+  padding-top: 40px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 813px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
